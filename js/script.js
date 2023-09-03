@@ -17,3 +17,21 @@ const contactButton = document.querySelector('.btn');
       }
     });
   });
+
+  window.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('section'); // Mengambil semua elemen section
+    const navLinks = document.querySelectorAll('.nav-link'); // Mengambil semua link navigasi
+
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      const navLink = navLinks[index];
+
+      if (window.pageYOffset >= sectionTop - sectionHeight / 2 && window.pageYOffset < sectionTop + sectionHeight / 2) {
+        // Mengaktifkan kelas "active" pada tautan navigasi yang sesuai dengan section saat ini
+        navLink.classList.add('active');
+      } else {
+        navLink.classList.remove('active');
+      }
+    });
+  });
