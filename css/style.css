@@ -1,0 +1,103 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #ff9900;
+}
+h2{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 32px;
+    color: #ff9900;
+}
+.h2-black{
+    color: #000;
+}
+
+.navbar-brand{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover{
+    color: #ffbb00;
+}
+.navbar-brand>img{
+    height: 28px;
+}
+
+.nav-link:hover, .icon-link:hover {
+    color: #ffbb00;
+}
+.nav-link {
+text-transform: uppercase;
+margin-right: 20px;
+}
+.nav-link.active {
+    color: #ffbb00 !important;
+}
+
+.icon-link{
+    font-size: 14px;
+    color: white;
+}
+
+.hero {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.profile-image {
+    max-width: 200px; /* Lebar gambar profil */
+    border: 2px solid #ff9900; /* Bingkai putih untuk gambar profil */
+    border-radius: 20% 14% 50% 22%; /* Membuat gambar profil berbentuk lingkaran */
+    margin-bottom: 20px; /* Jarak bawah gambar profil */
+}
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek shadow */
+}
+.highlight-text {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff9900; /* Warna teks yang di-highlight */
+}
+
+.about-section {
+    padding: 50px 0;
+    color: white;
+    background-color: #000; /* Warna latar belakang */
+}
+.about-image {
+    border-radius: 23% 47% 18% 18%;
+    max-width: 100%;
+    height: auto;
+}
+.footer{
+    color: #000;
+}
+
+section#contact{
+    color: white;
+}
+section#portofolio>h2{
+    color: black;
+}
+
+
+@media (min-width:992px) {
+    .nav-link:hover::before {
+        content: ''; 
+        display: block;
+        border-top: 4px solid #ffbb00;
+        width: 78%;
+        margin: auto;
+        padding-top: 12px;
+        margin-top: -16px;     
+    }
+}
